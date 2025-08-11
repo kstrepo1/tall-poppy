@@ -17,7 +17,7 @@ export default function Home() {
   );
 }
 
-var styles={
+let styles={
   head: {
     background: "#000000"
   }
