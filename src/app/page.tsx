@@ -17,7 +17,7 @@ export default function Home() {
   );
 }
 
-let styles={
+const styles={
   head: {
     background: "#000000"
   }
