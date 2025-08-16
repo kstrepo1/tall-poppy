@@ -35,6 +35,7 @@ export default function Home() {
       } as React.CSSProperties}
     >
       <Image
+      style={{marginLeft:"10px"}}
         alt={"Tall Poppy Studios"}
         src={"/logo-2.png"}
         height={80}
@@ -69,8 +70,7 @@ const styles={
       justifyContent: "center",
       alignItems: "center",
       top: 0,
-      left: 8,
-      right: -8
+      left: 0,
   },
   background: {
     
