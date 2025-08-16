@@ -37,8 +37,8 @@ export default function Home() {
       <Image
         alt={"Tall Poppy Studios"}
         src={"/logo-2.png"}
-        height={100}
-        width={500}
+        height={80}
+        width={400}
         priority
       />
     </div>
@@ -70,6 +70,7 @@ const styles={
       alignItems: "center",
       top: 0,
       left: 8,
+      right: -8
   },
   background: {
     
