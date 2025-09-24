@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 
 
-export default function Home() {
+export default function Landing() {
   const [bgLoaded, setbgLoaded] = useState(false);
   const [loader, setLoader] = useState(0);
 
