@@ -35,6 +35,7 @@ export default function Home() {
         alt="Gallery"
         height={150}
         width={150}
+        priority
         />
         </Link>
         <Link href="about">
@@ -42,12 +43,14 @@ export default function Home() {
         alt="About"
         height={150}
         width={150}
+        priority
         /></Link>
         <Link href="contact">
         <Image src="/contact-icon.png"
         alt="Contact"
         height={150}
         width={150}
+        priority
         />
         </Link>
       
