@@ -10,13 +10,12 @@ export default function Landing() {
   const [loader, setLoader] = useState(0);
 
     useEffect(() => {
-    if(bgLoaded){
+    if(!bgLoaded) return
     const interval = setInterval(() => {
       setLoader((v) => (v < 100 ? v + 0.01 : v));
     }, 50); // every 50ms
     return () => clearInterval(interval);
-    }
-  }, []);
+  }, [bgLoaded]);
   
   return (
 <>
