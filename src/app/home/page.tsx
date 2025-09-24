@@ -1,8 +1,7 @@
 "use client"
 import Image from "next/image";
-import Link from "next/link";
 import { useState, useEffect } from "react";
-
+import Link from "next/link";
 
 
 export default function Home() {
@@ -17,27 +16,8 @@ export default function Home() {
   }, []);
   
   return (
-<>
 
-  {!bgLoaded ? (
-    <div
-      style={{
-        ...styles.head,
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        background: "#000",
-        color: "#fff",
-        fontSize: 32,
-        zIndex: 10,
-      } as React.CSSProperties}
-    >
-      
 
-      <div className="loader"></div>
-
-    </div>
-  ) : (
     <div
       style={{
         ...styles.head,
@@ -45,33 +25,19 @@ export default function Home() {
     >
       <Image
         alt={"Tall Poppy Studios"}
-        src={"/tps-logo-ff.png"}
+        src={"/tps-logo-00.png"}
         height={80}
         width={400}
         priority
       />
+            <Link href="gallery">Gallery</Link>
+          <Link href="about">About</Link>
+          <Link href="contact">Contact</Link>
       
-      {loader>=1? <Link style={styles.button} href='home'>Enter</Link> : <progress value={loader}/>}
-      
-
-      
-
-    </div>
-  )}
-    
-    <div>
-      <Image 
-      style={{objectFit: "cover"}}
-      alt={"Background Gif"}
-      src={"/background.gif"}
-      fill={true}
-      onLoad={()=>setbgLoaded(true)}
-      />
     </div>
 
-
-  </>
-  );
+  
+    )
 }
 
 const styles={
@@ -87,13 +53,11 @@ const styles={
     top: 0,
     left: 0,
   },
-
+  background: {
+  
+  },
   button: {
-    border: "2px solid white",
-    borderRadius: 10,
-    padding: 10,
-    backgroundColor: "#00000062",
-    color:"white"
-  }
 
+    
+  }
 }
