@@ -30,9 +30,26 @@ export default function Home() {
         width={400}
         priority
       />
-            <Link href="gallery">Gallery</Link>
-          <Link href="about">About</Link>
-          <Link href="contact">Contact</Link>
+        <Link href="gallery">
+        <Image src="/gallery-icon.png"
+        alt="Gallery"
+        height={150}
+        width={150}
+        />
+        </Link>
+        <Link href="about">
+        <Image src="/about-icon.png"
+        alt="About"
+        height={150}
+        width={150}
+        /></Link>
+        <Link href="contact">
+        <Image src="/contact-icon.png"
+        alt="Contact"
+        height={150}
+        width={150}
+        />
+        </Link>
       
     </div>
 
