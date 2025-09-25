@@ -47,7 +47,7 @@ header{
   margin:1rem;
 }
 
-#galleryImages{
+.galleryImages{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -62,6 +62,17 @@ header{
 .brandHeader{
   font-size: 25px;
   margin:1rem;
+}
+.brandSubHeader{
+  font-size: 20px;
+  margin:1rem;
+  color: #b9b9b9
+}
+
+.brandServices{
+  font-size: 15px;
+  margin:1rem;
+  color: #b9b9b9
 }
 
 .white-line {

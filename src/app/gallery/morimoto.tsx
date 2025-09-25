@@ -26,8 +26,11 @@ export default function Moriomoto(){
         <div className="brandHeader">
             Morimoto
         </div>
+        <div className="brandServices">
+            Photography, Creative Direction
+        </div>
         
-        <div id="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
+        <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
         {images1.map((image) => (
             <Image 
             key={image.id}

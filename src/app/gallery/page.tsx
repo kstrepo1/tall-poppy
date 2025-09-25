@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Moriomoto from "./morimoto";
+import Sten from "./sten";
 
 export default function Gallery() {
 
@@ -13,7 +14,7 @@ export default function Gallery() {
         <><Header/>
         <h1>Gallery</h1>
         <Moriomoto/>
-        
+        <Sten/>
         </>
     )
 }
