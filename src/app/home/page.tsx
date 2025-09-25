@@ -31,17 +31,19 @@ export default function Home() {
     gsap.to("#gallery",{
       duration:1, 
       delay:.5, 
-      x:70
+      x:-150
     });
     gsap.to("#about",{
       duration:1, 
       delay:.5, 
-      x:-70
+      x:0,
+      y:-150
     });
     gsap.to("#contact",{
       duration:1, 
       delay:.5, 
-      x:70
+      x:150,
+      y:-300
     });
   });
 

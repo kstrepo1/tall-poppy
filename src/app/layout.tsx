@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Merriweather, Merriweather_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleTagManager } from '@next/third-parties/google';
+
 
 const merriweather = Merriweather({
   variable: "--font-merriweather",
@@ -23,6 +25,7 @@ export default function RootLayout({
       <Analytics/>
       <head>
         <meta name="color-scheme" content="light" />
+        <GoogleTagManager gtmId="G-E0RMVMQ88N" />
       </head>
       <body
         className={`${merriweather.variable} antialiased`}
