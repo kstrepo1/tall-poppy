@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Moriomoto from "./morimoto";
 import Sten from "./sten";
+import Tia from "./tia";
 
 export default function Gallery() {
 
@@ -15,6 +16,7 @@ export default function Gallery() {
         <h1>Gallery</h1>
         <Moriomoto/>
         <Sten/>
+        <Tia/>
         </>
     )
 }
