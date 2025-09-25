@@ -32,6 +32,18 @@ header{
   align-content: baseline;
 }
 
+@media only screen and (max-width: 767px) {
+  #headerElements{
+  flex-direction: column;
+}
+
+#headerLogo{
+  display: flex;
+  justify-content: center;
+}
+
+}
+
 #headerLogo{
   flex-grow: 2;
 }
