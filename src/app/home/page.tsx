@@ -45,13 +45,13 @@ export default function Home() {
     });
   });
 
-  function linkClicked(id){
-    useGSAP(()=>{
-      gsap.to(id ,{
+  // function linkClicked(id){
+  //   useGSAP(()=>{
+  //     gsap.to(id ,{
         
-      })
-    })
-  }
+  //     })
+  //   })
+  // }
   
   return (
 
