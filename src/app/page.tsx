@@ -64,7 +64,7 @@ export default function Landing() {
       <Image 
       style={{objectFit: "cover"}}
       alt={"Background Gif"}
-      src={"/background.gif"}
+      src={"/background2.gif"}
       fill={true}
       onLoad={()=>setbgLoaded(true)}
       />
