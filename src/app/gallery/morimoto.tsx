@@ -1,8 +1,20 @@
 "use client"
 import Image from "next/image"
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger) 
 
 
 export default function Moriomoto(){
+    useGSAP(() => { 
+    gsap.to('.brandHeader', {
+	scrollTrigger: '.brandHeader', // start animation when ".box" enters the viewport
+	x: 0
+    });
+    });
 
     const images1 = [
         {id:0, src:"/gallery/mm/mm-1-0.jpg", alt: "Morimoto 0.5"},
@@ -42,9 +54,9 @@ export default function Moriomoto(){
             priority
             />
         ))}
-        <video width="400px" height="500px" preload="none" className="galleryImage" muted autoPlay loop>
-                <source src="/gallery/mm/VideoMM.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
+        <video width="400px" height="500px" preload="none" className="galleryImage" muted autoPlay loop playsInline>
+            <source src="/gallery/mm/VideoMM.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
         </video>
         </div>
     </>
