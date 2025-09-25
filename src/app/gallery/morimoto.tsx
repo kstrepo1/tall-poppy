@@ -41,6 +41,7 @@ export default function Moriomoto(){
             alt={image.alt}
             objectFit="cover"
             className="galleryImage"
+            priority
             />
         ))}
         </div>
