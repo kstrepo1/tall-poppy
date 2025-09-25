@@ -52,7 +52,7 @@ export default function Landing() {
         priority
       />
       
-      {loader>=1? <Link style={styles.button} href='home'>Enter</Link> : <progress value={loader}/>}
+      {loader>=1? <Link href='home'><Image src={"/enter.png"} height={200} width={200} alt="enter"/></Link> : <progress value={loader}/>}
       
 
       
