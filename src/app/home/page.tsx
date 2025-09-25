@@ -59,7 +59,7 @@ export default function Home() {
     >
       <Image
         alt={"Tall Poppy Studios"}
-        src={"/tps-logo-00.png"}
+        src={"/tps-logo-ff.png"}
         height={80}
         width={400}
         priority
