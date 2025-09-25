@@ -38,11 +38,14 @@ export default function Moriomoto(){
             width={200}
             height={200}
             alt={image.alt}
-            objectFit="cover"
             className="galleryImage"
             priority
             />
         ))}
+        <video width="400px" height="500px" preload="none" className="galleryImage" muted autoPlay loop>
+                <source src="/gallery/mm/VideoMM.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+        </video>
         </div>
     </>
     )

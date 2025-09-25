@@ -53,6 +53,10 @@ export default function Sten(){
             priority
             />
         ))}
+        <video width="400px" height="500px" preload="none" className="galleryImage" muted autoPlay loop controlsList="nodownload nofullscreen noremoteplayback">
+                <source src="/gallery/sten/STEN SAMPLE VID.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+        </video>
         </div>
 
         <div className="brandSubHeader">
