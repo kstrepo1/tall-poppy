@@ -45,12 +45,8 @@ export default function Home() {
     });
   });
 
-  // function linkClicked(id){
-  //   useGSAP(()=>{
-  //     gsap.to(id ,{
-        
-  //     })
-  //   })
+  // function linkClicked(id:any){
+    
   // }
   
   return (
@@ -68,7 +64,7 @@ export default function Home() {
         width={400}
         priority
         
-      />
+      /><Link href="gallery">
         <Image src="/gallery-icon.png"
         alt="Gallery"
         height={150}
@@ -76,9 +72,10 @@ export default function Home() {
         priority
         className="title"
         id="gallery"
-        onClick={() => linkClicked("gallery")}
-        
+        // onClick={() => linkClicked("gallery")}
         />
+        </Link>
+        <Link href="about">
         <Image src="/about-icon.png"
         alt="About"
         height={150}
@@ -86,8 +83,9 @@ export default function Home() {
         priority
         className="title"
         id="about"
-        onClick={() => linkClicked("about")}
-        />
+        // onClick={() => linkClicked("about")}
+        /></Link>
+        <Link href="contact">
         <Image src="/contact-icon.png"
         alt="Contact"
         height={150}
@@ -95,8 +93,8 @@ export default function Home() {
         priority
         className="title"
         id="contact"
-        onClick={() => linkClicked("contact")}
-        />
+        // onClick={() => linkClicked("contact")}
+        /></Link>
       
     </div>
 
