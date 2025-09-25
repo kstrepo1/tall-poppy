@@ -12,7 +12,8 @@ export default function About() {
     return(
         <>
         <Header/>
-        <div>About</div></>
+        <h1>About</h1><hr className="white-line"/></>
+        
     )
 }
 
