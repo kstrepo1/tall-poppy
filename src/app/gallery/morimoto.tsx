@@ -5,6 +5,7 @@ import Image from "next/image"
 export default function Moriomoto(){
 
     const images1 = [
+        {id:0, src:"/gallery/mm/MM 0-5.jpg", alt: "Morimoto 0.5"},
         {id:1, src: "/gallery/mm/MM 1.jpg", alt: "Morimoto 1"},
         {id:2, src: "/gallery/mm/MM 2.jpg", alt: "Morimoto 2"},
         {id:3, src: "/gallery/mm/MM 3.jpg", alt: "Morimoto 3"},
@@ -17,11 +18,6 @@ export default function Moriomoto(){
         {id:10, src: "/gallery/mm/MM 10.jpg", alt: "Morimoto 10"},
         {id:11, src: "/gallery/mm/MM 11.jpg", alt: "Morimoto 11"},
         {id:12, src: "/gallery/mm/MM 12.jpg", alt: "Morimoto 12"},
-        
-    ]
-
-    const images2 = [
-
     ]
 
     return(
@@ -45,14 +41,6 @@ export default function Moriomoto(){
             />
         ))}
         </div>
-        
-
-
-    
-        
-        
-        
-        </>
-
+    </>
     )
 }
