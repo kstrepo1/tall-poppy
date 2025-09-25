@@ -2,6 +2,10 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP);
 
 
 export default function Home() {
@@ -14,6 +18,40 @@ export default function Home() {
     }, 50); // every 50ms
     return () => clearInterval(interval);
   }, []);
+
+  useGSAP(() => {
+    gsap.to(".title", {
+      duration: 1,
+      rotation: 360,
+      opacity: 1,
+      delay: .5,
+      stagger: 0.1, // stagger in from the left with a 0.1 second gap in between animations
+      ease: "sine.out"
+    });
+    gsap.to("#gallery",{
+      duration:1, 
+      delay:.5, 
+      x:70
+    });
+    gsap.to("#about",{
+      duration:1, 
+      delay:.5, 
+      x:-70
+    });
+    gsap.to("#contact",{
+      duration:1, 
+      delay:.5, 
+      x:70
+    });
+  });
+
+  function linkClicked(id){
+    useGSAP(()=>{
+      gsap.to(id ,{
+        
+      })
+    })
+  }
   
   return (
 
@@ -29,30 +67,36 @@ export default function Home() {
         height={80}
         width={400}
         priority
+        
       />
-        <Link href="gallery">
         <Image src="/gallery-icon.png"
         alt="Gallery"
         height={150}
         width={150}
         priority
+        className="title"
+        id="gallery"
+        onClick={() => linkClicked("gallery")}
+        
         />
-        </Link>
-        <Link href="about">
         <Image src="/about-icon.png"
         alt="About"
         height={150}
         width={150}
         priority
-        /></Link>
-        <Link href="contact">
+        className="title"
+        id="about"
+        onClick={() => linkClicked("about")}
+        />
         <Image src="/contact-icon.png"
         alt="Contact"
         height={150}
         width={150}
         priority
+        className="title"
+        id="contact"
+        onClick={() => linkClicked("contact")}
         />
-        </Link>
       
     </div>
 
