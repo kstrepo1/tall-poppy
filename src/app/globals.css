@@ -14,16 +14,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #ffffff;
-    --foreground: #000000;
+    --background: #111111;
+    --foreground: #ffffff;
   }
 }
 
-html {
-  color-scheme: light;
-}
 
 header{
   background: var(--headBackground)

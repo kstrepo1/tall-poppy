@@ -21,6 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Analytics/>
+      <head>
+        <meta name="color-scheme" content="light" />
+      </head>
       <body
         className={`${merriweather.variable} antialiased`}
       >
