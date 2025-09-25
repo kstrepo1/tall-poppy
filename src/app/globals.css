@@ -23,13 +23,64 @@
 
 
 header{
-  background: var(--headBackground)
+  background: var(--headBackground);
 }
+
+#headerElements{
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+}
+
+#headerLogo{
+  flex-grow: 2;
+}
+
+#headerLinks{
+  display: flex;
+  flex-grow: 2;
+  margin:auto;
+  justify-content: flex-end;
+}
+
+.headerLink{
+  margin:1rem;
+}
+
+#galleryImages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.galleryImage {
+  height: 400px;
+  width: auto
+}
+
+.brandHeader{
+  font-size: 25px;
+  margin:1rem;
+}
+
+.white-line {
+  display: block; 
+  height: 1px;  
+  background-color: white;
+  width: 100%;  
+  margin: 1rem 0;
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Merriweather', serif;
+}
+
+h1{
+  font-size: 35px;
+  margin: 1rem;
 }
 
 .loader {
