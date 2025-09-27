@@ -62,8 +62,8 @@ export default function Home() {
 
         <Image 
         style={{objectFit: "cover"}}
-        alt={"Background Gif"}
-        src={"/bgrd.jpeg"}
+        alt={"Background Poppies In Neon Colours"}
+        src={"/BGRD.jpeg"}
         fill={true}
         onLoad={()=>setbgLoaded(true)}
         />
