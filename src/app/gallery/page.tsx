@@ -13,7 +13,7 @@ export default function Gallery() {
     return(
         
         <><Header/>
-        <h1>Gallery</h1>
+        <h1>GALLERY</h1>
         <Moriomoto/>
         <Sten/>
         <Tia/>

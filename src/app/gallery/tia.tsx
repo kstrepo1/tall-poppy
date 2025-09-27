@@ -19,10 +19,10 @@ export default function Tia(){
         <>
         <hr className="white-line"/>
         <div className="brandHeader">
-            Tia
+            TIA
         </div>
         <div className="brandServices">
-            Photography, Creative Direction
+            PHOTOGRAPHY, CREATIVE DIRECTION
         </div>
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>

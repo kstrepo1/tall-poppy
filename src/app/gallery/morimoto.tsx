@@ -36,10 +36,10 @@ export default function Moriomoto(){
         <>
         <hr className="white-line"/>
         <div className="brandHeader">
-            Morimoto
+            MORIMOTO
         </div>
         <div className="brandServices">
-            Photography, Creative Direction
+            PHOTOGRAPHY, CREATIVE DIRECTION
         </div>
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>

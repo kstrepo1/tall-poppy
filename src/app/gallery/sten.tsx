@@ -34,7 +34,7 @@ export default function Sten(){
             STEN 
         </div>
         <div className="brandServices">
-            Photography, Creative Direction
+            PHOTOGRAPHY, CREATIVE DIRECTION
         </div>
         <div className="brandSubHeader">
             HAPPY HOUSE 
