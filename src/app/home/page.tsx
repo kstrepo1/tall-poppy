@@ -65,7 +65,7 @@ export default function Home() {
         alt={"Background Poppies In Neon Colours"}
         src={"/BGRD.jpeg"}
         fill={true}
-        onLoad={()=>setbgLoaded(true)}
+        priority
         />
 
       <Image
