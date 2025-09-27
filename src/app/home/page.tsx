@@ -59,7 +59,17 @@ export default function Home() {
         ...styles.head,
       } as React.CSSProperties}
     >
+
+        <Image 
+        style={{objectFit: "cover"}}
+        alt={"Background Gif"}
+        src={"/bgrd.jpeg"}
+        fill={true}
+        onLoad={()=>setbgLoaded(true)}
+        />
+
       <Image
+      style={{zIndex: 2}}
         alt={"Tall Poppy Studios"}
         src={"/tps-logo-ff.png"}
         height={80}
