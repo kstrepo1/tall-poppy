@@ -94,6 +94,9 @@ header{
   width: 100%;  
   margin: 1rem 0;
 }
+.headerBox{
+  height: 100px;
+}
 
 
 body {

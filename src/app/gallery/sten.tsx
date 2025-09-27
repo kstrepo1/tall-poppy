@@ -1,8 +1,76 @@
 "use client"
 import Image from "next/image"
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrambleTextPlugin);
 
 
 export default function Sten(){
+
+        useGSAP(() => { 
+            gsap.to('#brandHeaderSG', {
+                scrollTrigger: {
+                    trigger: '#brandHeaderSG',   // element that triggers
+                    start: 'top center',       // when it enters viewport
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                scrambleText: {
+                    text: "STEN",
+                    chars: "XO"
+                }
+            });
+
+            gsap.to('#brandServicesSG', {
+                scrollTrigger: {
+                    trigger: '#brandServicesSG',   // element that triggers
+                    start: 'top center',       // when it enters viewport
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                delay: 0.5,
+                scrambleText: {
+                    text: "PHOTOGRAPHY, CREATIVE DIRECTION",
+                    chars: "XO"
+                }
+                });
+            
+            gsap.to('#brandSubHeaderSG', {
+                scrollTrigger: {
+                    trigger: '#brandSubHeaderSG',   // element that triggers
+                    start: 'top center',       // when it enters viewport
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                delay: 1,
+                scrambleText: {
+                    text: "HAPPY HOUSE",
+                    chars: "XO"
+                }
+                });
+
+            
+
+            gsap.to('#brandSubHeaderSG2', {
+                scrollTrigger: {
+                    trigger: '#brandSubHeaderSG2',   // element that triggers
+                    start: 'top center',       // when it enters viewport
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                delay: 0,
+                scrambleText: {
+                    text: "STILL LIFE",
+                    chars: "XO"
+                }
+                });
+
+
+    });
 
     const images1 = [
         {id:0, src:"/gallery/sten/STEN HAPPY HOUSE 1.jpg", alt: "Morimoto 1"},
@@ -30,14 +98,10 @@ export default function Sten(){
     return(
         <>
         <hr className="white-line"/>
-        <div className="brandHeader">
-            STEN 
-        </div>
-        <div className="brandServices">
-            PHOTOGRAPHY, CREATIVE DIRECTION
-        </div>
-        <div className="brandSubHeader">
-            HAPPY HOUSE 
+        <div className="headerBox" style={{height:150}}>
+            <div className="brandHeader" id="brandHeaderSG"></div>
+            <div className="brandServices" id="brandServicesSG"></div>
+            <div className="brandSubHeader" id="brandSubHeaderSG"> </div>
         </div>
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
@@ -48,7 +112,7 @@ export default function Sten(){
             width={200}
             height={200}
             alt={image.alt}
-            objectFit="cover"
+            
             className="galleryImage"
             priority
             />
@@ -59,7 +123,7 @@ export default function Sten(){
         </video>
         </div>
 
-        <div className="brandSubHeader">
+        <div className="brandSubHeader" id="brandSubHeaderSG2">
             STILL LIFE
         </div>
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
@@ -70,7 +134,7 @@ export default function Sten(){
             width={200}
             height={200}
             alt={image.alt}
-            objectFit="cover"
+            
             className="galleryImage"
             
             />

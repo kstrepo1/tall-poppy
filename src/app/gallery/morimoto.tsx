@@ -3,17 +3,33 @@ import Image from "next/image"
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger) 
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrambleTextPlugin);
 
 
 export default function Moriomoto(){
+
     useGSAP(() => { 
-    gsap.to('.brandHeader', {
-	scrollTrigger: '.brandHeader', // start animation when ".box" enters the viewport
-	x: 0
-    });
+        gsap.to('.brandHeader', {
+        scrollTrigger: '.brandHeader', // start animation when ".box" enters the viewport
+        x: 0
+        });
+
+        gsap.to('#brandHeaderMM', {
+        duration: 1, 
+        scrambleText: "MORIMOTO",
+        chars: "XO",
+        });
+
+        gsap.to('#brandServicesMM', {
+        duration: 2,
+        delay: 0.5,
+        scrambleText: "PHOTOGRAPHY, CREATIVE DIRECTION",
+        chars: "XO",
+        });
+
     });
 
     const images1 = [
@@ -35,11 +51,9 @@ export default function Moriomoto(){
     return(
         <>
         <hr className="white-line"/>
-        <div className="brandHeader">
-            MORIMOTO
-        </div>
-        <div className="brandServices">
-            PHOTOGRAPHY, CREATIVE DIRECTION
+        <div className="headerBox">
+            <div className="brandHeader" id="brandHeaderMM"></div>
+            <div className="brandServices" id="brandServicesMM"></div>
         </div>
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>

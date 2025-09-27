@@ -1,8 +1,46 @@
 "use client"
-import Image from "next/image"
+import Image from "next/image";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrambleTextPlugin);
+
 
 
 export default function Tia(){
+
+            useGSAP(() => { 
+            gsap.to('#brandHeaderT', {
+                scrollTrigger: {
+                    trigger: '#brandHeaderT',   // element that triggers
+                    start: 'top center',       // when it enters viewport
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                scrambleText: {
+                    text: "TIA",
+                    chars: "XO"
+                }
+            });
+
+            gsap.to('#brandServicesT', {
+                scrollTrigger: {
+                    trigger: '#brandServicesT',   // element that triggers
+                    start: 'top center',       // when it enters viewport
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                delay: 0.5,
+                scrambleText: {
+                    text: "PHOTOGRAPHY, CREATIVE DIRECTION",
+                    chars: "XO"
+                }
+                });
+
+            });
 
     const images1 = [
         {id:1, src: "/gallery/tia/tia-1.jpg", alt: "Tia 1"},
@@ -18,11 +56,9 @@ export default function Tia(){
     return(
         <>
         <hr className="white-line"/>
-        <div className="brandHeader">
-            TIA
-        </div>
-        <div className="brandServices">
-            PHOTOGRAPHY, CREATIVE DIRECTION
+         <div className="headerBox">
+            <div className="brandHeader" id="brandHeaderT">        </div>
+            <div className="brandServices" id="brandServicesT">        </div>
         </div>
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
@@ -33,7 +69,6 @@ export default function Tia(){
             width={200}
             height={200}
             alt={image.alt}
-            objectFit="cover"
             className="galleryImage"
             
             />
