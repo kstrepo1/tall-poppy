@@ -31,28 +31,25 @@ export default function Home() {
     gsap.to("#gallery",{
       duration:1, 
       delay:.5, 
-      x:-150
+      xPercent:-130,
+      rotate:-360
     });
     gsap.to("#about",{
       duration:1, 
       delay:.5, 
-      x:0,
-      y:-150
+      yPercent:-100
     });
     gsap.to("#contact",{
       duration:1, 
       delay:.5, 
-      x:150,
-      y:-300
+      xPercent:130,
+      yPercent:-200,
+      rotate:360
     });
   });
 
-  // function linkClicked(id:any){
-    
-  // }
   
   return (
-
 
     <div
       style={{
@@ -60,56 +57,62 @@ export default function Home() {
       } as React.CSSProperties}
     >
 
-        <Image 
+      <Image 
         style={{objectFit: "cover"}}
         alt={"Background Poppies In Neon Colours"}
         src={"/BGRD.jpeg"}
         fill={true}
         priority
-        />
-
+        id="home-2-background"
+      />      
+      
+      
       <Image
-      style={{zIndex: 2}}
+        style={{zIndex: 2}}
         alt={"Tall Poppy Studios"}
         src={"/tps-logo-ff.png"}
         height={80}
         width={400}
         priority
-        
-      /><Link href="gallery">
+        id="tall-poppy-logo"
+      />
+      
+      <Link href="gallery">
         <Image src="/gallery-icon.png"
-        alt="Gallery"
-        height={150}
-        width={150}
-        priority
-        className="title"
-        id="gallery"
-        // onClick={() => linkClicked("gallery")}
+          alt="Gallery"
+          height={150}
+          width={150}
+          priority
+          className="title-option"
+          id="gallery"
         />
-        </Link>
-        <Link href="about">
+      </Link>
+
+      <Link href="about">
         <Image src="/about-icon.png"
-        alt="About"
-        height={150}
-        width={150}
-        priority
-        className="title"
-        id="about"
-        // onClick={() => linkClicked("about")}
-        /></Link>
-        <Link href="contact">
+          alt="About"
+          height={150}
+          width={150}
+          priority
+          className="title-option"
+          id="about"
+        />
+      
+      </Link>
+
+      <Link href="contact">
         <Image src="/contact-icon.png"
-        alt="Contact"
-        height={150}
-        width={150}
-        priority
-        className="title"
-        id="contact"
-        // onClick={() => linkClicked("contact")}
-        /></Link>
+          alt="Contact"
+          height={150}
+          width={150}
+          priority
+          className="title-option"
+          id="contact"
+        />
+      </Link>
       
     </div>
-
+    
   
     )
 }
@@ -120,6 +123,7 @@ const styles={
     position: "absolute",
     zIndex: 2,
     width: "100%",
+    height:"100%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

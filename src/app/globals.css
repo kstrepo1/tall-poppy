@@ -35,12 +35,30 @@ header{
 @media only screen and (max-width: 767px) {
   #headerElements{
   flex-direction: column;
-}
+  
+  }
 
-#headerLogo{
-  display: flex;
-  justify-content: center;
-}
+  #headerLogo{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #tall-poppy-logo{
+    height: auto;
+    width: 60vw;
+  }
+
+
+  .title-option{
+    height:100px;
+    width: 100px;
+    top: 50vh;
+  }
+
+  #about{
+    y:-100
+  }
+
 
 }
 
