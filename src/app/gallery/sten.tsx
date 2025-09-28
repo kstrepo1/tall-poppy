@@ -124,7 +124,7 @@ export default function Sten(){
         </div>
 
         <div className="brandSubHeader" id="brandSubHeaderSG2">
-            STILL LIFE
+            
         </div>
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
         {images2.map((image) => (
