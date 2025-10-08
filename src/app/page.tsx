@@ -52,7 +52,7 @@ export default function Landing() {
         priority
       />
 
-      <div className="">Coming Soon</div>
+      <div className="coming-soon"><div><center>Coming Soon. <br></br> <a href="mailto:hi@tallpoppystudios.au">hi@tallpoppystudios.au</a></center></div></div>
       
       {/* {loader>=1? 
       <Link href='home'>
