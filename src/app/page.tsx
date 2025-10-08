@@ -51,8 +51,12 @@ export default function Landing() {
         width={400}
         priority
       />
+
+      <div className="">Coming Soon</div>
       
-      {loader>=1? <Link href='home'><Image src={"/enter.png"} height={200} width={200} alt="enter" priority/></Link> : <progress value={loader}/>}
+      {/* {loader>=1? 
+      <Link href='home'>
+        <Image src={"/enter.png"} height={200} width={200} alt="enter" priority/></Link> : <progress value={loader}/>} */}
       
 
       

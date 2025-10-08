@@ -19,7 +19,7 @@ export default function Header() {
                 
             <div id="headerLinks">
                 <Link href="gallery" className="headerLink">Gallery </Link>
-                <Link href="about" className="headerLink">About </Link>
+                <Link href="about" className="headerLink">About </Link> 
                 <Link href="contact" className="headerLink">Contact</Link>
             </div>
 
