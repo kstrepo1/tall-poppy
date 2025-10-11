@@ -33,19 +33,19 @@ export default function Moriomoto(){
     });
 
     const images1 = [
-        {id:0, src:"/gallery/mm/mm-1-0.jpg", alt: "Morimoto 0.5"},
+        {id:0, src:"/gallery/mm/mm-1-0.jpg", alt: "Morimoto 0.5", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
         {id:1, src: "/gallery/mm/mm-1-1.jpg", alt: "Morimoto 1"},
-        {id:2, src: "/gallery/mm/MM 2.jpg", alt: "Morimoto 2"},
-        {id:3, src: "/gallery/mm/MM 3.jpg", alt: "Morimoto 3"},
-        {id:4, src: "/gallery/mm/MM 4.jpg", alt: "Morimoto 4"},
-        {id:5, src: "/gallery/mm/MM 5.jpg", alt: "Morimoto 5"},
-        {id:6, src: "/gallery/mm/MM 5-1.jpg", alt: "Morimoto 6"},
-        {id:7, src: "/gallery/mm/MM 7.jpg", alt: "Morimoto 7"},
-        {id:8, src: "/gallery/mm/MM 8.jpg", alt: "Morimoto 8"},
-        {id:9, src: "/gallery/mm/MM 9.jpg", alt: "Morimoto 9"},
-        {id:10, src: "/gallery/mm/MM 10.jpg", alt: "Morimoto 10"},
-        {id:11, src: "/gallery/mm/MM 11.jpg", alt: "Morimoto 11"},
-        {id:12, src: "/gallery/mm/MM 12.jpg", alt: "Morimoto 12"},
+        {id:2, src: "/gallery/mm/MM 2.jpg", alt: "Morimoto 2", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:3, src: "/gallery/mm/MM 3.jpg", alt: "Morimoto 3", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:4, src: "/gallery/mm/MM 4.jpg", alt: "Morimoto 4", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:5, src: "/gallery/mm/MM 5.jpg", alt: "Morimoto 5", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:6, src: "/gallery/mm/MM 5-1.jpg", alt: "Morimoto 6", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:7, src: "/gallery/mm/MM 7.jpg", alt: "Morimoto 7", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:8, src: "/gallery/mm/MM 8.jpg", alt: "Morimoto 8", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:9, src: "/gallery/mm/MM 9.jpg", alt: "Morimoto 9", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:10, src: "/gallery/mm/MM 10.jpg", alt: "Morimoto 10", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:11, src: "/gallery/mm/MM 11.jpg", alt: "Morimoto 11", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:12, src: "/gallery/mm/MM 12.jpg", alt: "Morimoto 12", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
     ]
 
     return(
@@ -58,6 +58,7 @@ export default function Moriomoto(){
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
         {images1.map((image) => (
+            <div>
             <Image 
             key={image.id}
             src={image.src} 
@@ -67,11 +68,16 @@ export default function Moriomoto(){
             className="galleryImage"
             priority
             />
+            <div><b>{image.imageHeader}</b> {image.imageText}</div>
+            </div>
         ))}
-        <video width="400px" height="500px" preload="none" className="galleryImage" muted autoPlay loop playsInline>
-            <source src="/gallery/mm/VideoMM.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
+        <div>
+            <video width="400px" height="500px" preload="none" className="galleryImage" muted autoPlay loop playsInline>
+                <source src="/gallery/mm/VideoMM.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            {/* <div><b>{image.imageHeader}</b> {image.imageText}</div> */}
+        </div>
         </div>
     </>
     )
