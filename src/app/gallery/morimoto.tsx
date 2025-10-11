@@ -19,15 +19,20 @@ export default function Moriomoto(){
 
         gsap.to('#brandHeaderMM', {
         duration: 1, 
-        scrambleText: "MORIMOTO",
-        chars: "XO",
+        scrambleText: {
+            text: "MORIMOTO",
+            chars: "XO"
+        }
         });
 
         gsap.to('#brandServicesMM', {
         duration: 2,
         delay: 0.5,
-        scrambleText: "PHOTOGRAPHY, CREATIVE DIRECTION",
-        chars: "XO",
+        scrambleText:{
+            text: "PHOTOGRAPHY, CREATIVE DIRECTION",
+            chars: "XO",
+        } 
+        
         });
 
     });
@@ -58,9 +63,9 @@ export default function Moriomoto(){
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
         {images1.map((image) => (
-            <div>
+            <div key={image.id}>
             <Image 
-            key={image.id}
+            
             src={image.src} 
             width={200}
             height={200}
@@ -68,7 +73,7 @@ export default function Moriomoto(){
             className="galleryImage"
             priority
             />
-            <div><b>{image.imageHeader}</b> {image.imageText}</div>
+            <div className="imageTitle"><b>{image.imageHeader}</b> {image.imageText}</div>
             </div>
         ))}
         <div>

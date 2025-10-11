@@ -92,6 +92,10 @@ header{
   object-fit: cover;
 }
 
+.imageTitle{
+  margin: 0.5rem 0 1rem 0;
+}
+
 .brandHeader{
   font-size: 20px;
   margin:1rem;
