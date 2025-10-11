@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #000000;
   --headBackground: #000000;
   
 }
@@ -16,8 +16,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #000000;
-    --foreground: #ffffff;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
@@ -30,6 +30,8 @@ header{
   display: flex;
   flex-direction: row;
   align-content: baseline;
+  background-color: #000000;
+  padding: 1rem 1rem 1rem 0 ;
 }
 
 @media only screen and (max-width: 767px) {
@@ -71,6 +73,7 @@ header{
   flex-grow: 2;
   margin:auto;
   justify-content: flex-end;
+  color:#ffffff
 }
 
 .headerLink{
@@ -84,8 +87,8 @@ header{
 }
 
 .galleryImage {
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 320px;
   object-fit: cover;
 }
 
@@ -96,13 +99,13 @@ header{
 .brandSubHeader{
   font-size: 15px;
   margin:1rem;
-  color: #b9b9b9
+  color: #000000
 }
 
 .brandServices{
   font-size: 15px;
   margin:1rem;
-  color: #b9b9b9
+  color: #000000
 }
 .coming-soon{
   height:100px;
