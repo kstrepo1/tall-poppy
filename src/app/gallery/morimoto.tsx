@@ -34,7 +34,7 @@ export default function Moriomoto(){
 
     const images1 = [
         {id:0, src:"/gallery/mm/mm-1-0.jpg", alt: "Morimoto 0.5", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:1, src: "/gallery/mm/mm-1-1.jpg", alt: "Morimoto 1"},
+        {id:1, src: "/gallery/mm/mm-1-1.jpg", alt: "Morimoto 1", imageHeader:"", imageText:""},
         {id:2, src: "/gallery/mm/MM 2.jpg", alt: "Morimoto 2", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
         {id:3, src: "/gallery/mm/MM 3.jpg", alt: "Morimoto 3", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
         {id:4, src: "/gallery/mm/MM 4.jpg", alt: "Morimoto 4", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
@@ -76,7 +76,6 @@ export default function Moriomoto(){
                 <source src="/gallery/mm/VideoMM.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            {/* <div><b>{image.imageHeader}</b> {image.imageText}</div> */}
         </div>
         </div>
     </>
