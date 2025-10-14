@@ -37,20 +37,22 @@ export default function Moriomoto(){
 
     });
 
+
+
     const images1 = [
-        {id:0, src:"/gallery/mm/mm-1-0.jpg", alt: "Morimoto 0.5", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:0, src:"/gallery/mm/mm-1-0.jpg", alt: "Morimoto 0.5", imageHeader:"LAURA", imageText:"SLINGBACKS"},
         {id:1, src: "/gallery/mm/mm-1-1.jpg", alt: "Morimoto 1", imageHeader:"", imageText:""},
-        {id:2, src: "/gallery/mm/MM 2.jpg", alt: "Morimoto 2", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:3, src: "/gallery/mm/MM 3.jpg", alt: "Morimoto 3", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:4, src: "/gallery/mm/MM 4.jpg", alt: "Morimoto 4", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:5, src: "/gallery/mm/MM 5.jpg", alt: "Morimoto 5", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:6, src: "/gallery/mm/MM 5-1.jpg", alt: "Morimoto 6", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:7, src: "/gallery/mm/MM 7.jpg", alt: "Morimoto 7", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:8, src: "/gallery/mm/MM 8.jpg", alt: "Morimoto 8", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:9, src: "/gallery/mm/MM 9.jpg", alt: "Morimoto 9", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:10, src: "/gallery/mm/MM 10.jpg", alt: "Morimoto 10", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:11, src: "/gallery/mm/MM 11.jpg", alt: "Morimoto 11", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
-        {id:12, src: "/gallery/mm/MM 12.jpg", alt: "Morimoto 12", imageHeader:"Morimoto Header", imageText:"Monty Monty Monty"},
+        {id:2, src: "/gallery/mm/MM 2.jpg", alt: "Morimoto 2", imageHeader:"BIANCA", imageText:"PUMPS"},
+        {id:3, src: "/gallery/mm/MM 3.jpg", alt: "Morimoto 3", imageHeader:"ALIX", imageText:"MULES"},
+        {id:4, src: "/gallery/mm/MM 4.jpg", alt: "Morimoto 4", imageHeader:"ALMA", imageText:"MESH PUMPS"},
+        {id:5, src: "/gallery/mm/MM 5.jpg", alt: "Morimoto 5", imageHeader:"ALIX", imageText:"MULES"},
+        {id:6, src: "/gallery/mm/MM 5-1.jpg", alt: "Morimoto 6", imageHeader:"ALIX", imageText:"MULES"},
+        {id:7, src: "/gallery/mm/MM 7.jpg", alt: "Morimoto 7", imageHeader:"BIANCA", imageText:"PUMPS"},
+        {id:8, src: "/gallery/mm/MM 8.jpg", alt: "Morimoto 8", imageHeader:"MARTINA", imageText:"SANDAL"},
+        {id:9, src: "/gallery/mm/MM 9.jpg", alt: "Morimoto 9", imageHeader:"", imageText:""},
+        {id:10, src: "/gallery/mm/MM 10.jpg", alt: "Morimoto 10", imageHeader:"", imageText:""},
+        {id:11, src: "/gallery/mm/MM 11.jpg", alt: "Morimoto 11", imageHeader:"ALIX", imageText:"MULES"},
+        {id:12, src: "/gallery/mm/MM 12.jpg", alt: "Morimoto 12", imageHeader:"ALIX", imageText:"MULES"},
     ]
 
     return(
@@ -81,6 +83,7 @@ export default function Moriomoto(){
                 <source src="/gallery/mm/VideoMM.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
+            <div className="imageTitle"><b>VICTORIA</b> SANDALS</div>
         </div>
         </div>
     </>
