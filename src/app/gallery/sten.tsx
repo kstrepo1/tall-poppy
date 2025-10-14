@@ -48,7 +48,7 @@ export default function Sten(){
                 duration: 1,
                 delay: 1,
                 scrambleText: {
-                    text: "HAPPY HOUSE",
+                    text: "HAPPY PLACE - TOORAK",
                     chars: "XO"
                 }
                 });
