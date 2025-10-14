@@ -113,14 +113,14 @@ header{
   color: #000000
 }
 .coming-soon{
-  height:100px;
-  width:300px;
+
   background-color: rgba(255, 255, 255, 0.9);
   color:#000000;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  padding: 30px
 }
 
 .white-line {

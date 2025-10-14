@@ -52,10 +52,13 @@ export default function Landing() {
         priority
       />
 
-      <div className="coming-soon"><div><center>JUST A GIRL WHO DOES IT ALL
-PHOTOGRAPHY/DESIGN/CONTENT
-WEBSITE COMING SOON 🚀 ⚡️<br></br> <a href="mailto:hi@tallpoppystudios.au">hi@tallpoppystudios.au</a></center></div></div>
-      
+      <div className="coming-soon"><div>
+        <center>
+          <p>JUST A GIRL WHO DOES IT ALL</p>
+          <p>PHOTOGRAPHY/DESIGN/CONTENT</p>
+          <p>WEBSITE COMING SOON 🚀 ⚡️</p>
+           <a href="mailto:hi@tallpoppystudios.au">hi@tallpoppystudios.au</a></center></div></div>
+                        
       {/* {loader>=1? 
       <Link href='home'>
         <Image src={"/enter.png"} height={200} width={200} alt="enter" priority/></Link> : <progress value={loader}/>} */}
