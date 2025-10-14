@@ -29,20 +29,24 @@ header{
 #headerElements{
   display: flex;
   flex-direction: row;
+  align-items: center;
   align-content: baseline;
   background-color: #000000;
-  padding: 1rem 1rem 1rem 0 ;
+  height:100px;
+  
 }
 
 @media only screen and (max-width: 767px) {
   #headerElements{
-  flex-direction: column;
-  
+    flex-direction: column;
+    height:auto;
+    width: 100vw;
   }
 
   #headerLogo{
     display: flex;
     justify-content: center;
+    width:100vw;
   }
   
   #tall-poppy-logo{
@@ -66,6 +70,8 @@ header{
 
 #headerLogo{
   flex-grow: 2;
+  align-items: center;
+  height: auto;
 }
 
 #headerLinks{
