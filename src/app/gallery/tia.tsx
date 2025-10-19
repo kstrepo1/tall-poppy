@@ -21,7 +21,7 @@ export default function Tia(){
                 },
                 duration: 1,
                 scrambleText: {
-                    text: "TIA",
+                    text: "TEST w/ TIA",
                     chars: "XO"
                 }
             });
