@@ -40,7 +40,7 @@ export default function Moriomoto(){
 
 
     const images1 = [
-        {id:0, src:"/gallery/mm/mm-1-0.jpg", alt: "Morimoto 0.5", imageHeader:"LAURA", imageText:"SLINGBACKS"},
+        {id:0, src:"/gallery/mm/mm-1-0.jpg", alt: "Morimoto 0.5", imageHeader:"ALIX", imageText:"MULES"},
         {id:10, src: "/gallery/mm/mm-1-1.jpg", alt: "Morimoto 1", imageHeader:"", imageText:""},
         {id:20, src: "/gallery/mm/MM 2.jpg", alt: "Morimoto 2", imageHeader:"BIANCA", imageText:"PUMPS"},
         {id:30, src: "/gallery/mm/MM 3.jpg", alt: "Morimoto 3", imageHeader:"ALIX", imageText:"MULES"},
@@ -52,9 +52,9 @@ export default function Moriomoto(){
         {id:71, src: "/gallery/mm/MM 7-1.jpg", alt: "Morimoto 7-1", imageHeader:"ALIX", imageText:"MULES"},
         {id:80, src: "/gallery/mm/MM 8.jpg", alt: "Morimoto 8", imageHeader:"MARTINA", imageText:"SANDAL"},
         {id:85, src: "/gallery/mm/MM 8-5.jpg", alt: "Morimoto 8", imageHeader:"ALIX", imageText:"MULES"},
-        {id:90, src: "/gallery/mm/MM 9.jpg", alt: "Morimoto 9", imageHeader:"", imageText:""},
-        {id:100, src: "/gallery/mm/MM 10.jpg", alt: "Morimoto 10", imageHeader:"", imageText:""},
-        {id:110, src: "/gallery/mm/MM 11.jpg", alt: "Morimoto 11", imageHeader:"ALIX", imageText:"MULES"},
+        {id:90, src: "/gallery/mm/MM 9.jpg", alt: "Morimoto 9", imageHeader:"ALIX", imageText:"MULES"},
+        {id:100, src: "/gallery/mm/MM 10.jpg", alt: "Morimoto 10", imageHeader:"ALIX", imageText:"MULES"},
+        {id:110, src: "/gallery/mm/MM 11.jpg", alt: "Morimoto 11", imageHeader:"VICTORIA", imageText:"SANDALS"},
 
     ]
 
@@ -86,7 +86,7 @@ export default function Moriomoto(){
                 <source src="/gallery/mm/VideoMM.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div className="imageTitle"><b>VICTORIA</b> SANDALS</div>
+            <div className="imageTitle"><b>LAURA</b> SLINGBACK</div>
         </div>
         </div>
     </>
