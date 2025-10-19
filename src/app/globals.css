@@ -68,6 +68,10 @@ header{
 
 }
 
+.aboutText{
+  margin:3rem;
+}
+
 #headerLogo{
   flex-grow: 2;
   align-items: center;
