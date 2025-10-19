@@ -50,6 +50,18 @@ export default function FBMJ(){
         {id:7, src:"/gallery/fbmj/FMBJ1 005_ chemistry.jpg", alt: "FBMJ", imageHeader:"CHEMISTRY", imageText:""},
     ]
 
+    const images2 = [
+        {id:0, src:"/gallery/fbmj/FBMJ2 002_ bow wow wowFILM.jpg", alt: "FBMJ", imageHeader:"BOW WOW WOW", imageText:""},
+        {id:1, src:"/gallery/fbmj/FBMJ2 out of control 1.jpg", alt: "FBMJ", imageHeader:"OUT OF CONTROL 1", imageText:""},
+        {id:2, src:"/gallery/fbmj/FBMJ2 out of control_.jpg", alt: "FBMJ", imageHeader:"OUT OF CONTROL 2", imageText:""},
+        {id:3, src:"/gallery/fbmj/FBMJ2 primrose BIN.jpg", alt: "FBMJ", imageHeader:"PRIMROSE", imageText:""},
+        {id:4, src:"/gallery/fbmj/FBMJ2 primrose.jpg", alt: "FBMJ", imageHeader:"PRIMROSE", imageText:""},
+        {id:5, src:"/gallery/fbmj/FBMJ2 WHISPER HONEY FILM 1.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
+        {id:6, src:"/gallery/fbmj/FBMJ2 WHISPER HONEY FILM_.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
+        {id:7, src:"/gallery/fbmj/FBMJ2 WHITE.jpg", alt: "FBMJ", imageHeader:"WHITE", imageText:""},
+    
+    ]
+
     return(
         <>
         <hr className="white-line"/>
@@ -60,6 +72,20 @@ export default function FBMJ(){
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
         {images1.map((image) => (
+            <div key={image.id}>
+            <Image 
+            
+            src={image.src} 
+            width={200}
+            height={200}
+            alt={image.alt}
+            className="galleryImage"
+            priority
+            />
+            <div className="imageTitle"><b>{image.imageHeader}</b> {image.imageText}</div>
+            </div>
+        ))}
+                {images2.map((image) => (
             <div key={image.id}>
             <Image 
             
