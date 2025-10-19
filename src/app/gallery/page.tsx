@@ -6,15 +6,14 @@ import Link from "next/link";
 import Moriomoto from "./morimoto";
 import Sten from "./sten";
 import Tia from "./tia";
+import FBMJ from "./FBMJ";
 
 export default function Gallery() {
-
-
     return(
-        
         <><Header/>
         <h1>GALLERY</h1>
         <Moriomoto/>
+        <FBMJ/>
         <Sten/>
         <Tia/>
         </>
