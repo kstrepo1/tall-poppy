@@ -38,36 +38,6 @@ export default function Sten(){
                     chars: "XO"
                 }
                 });
-            
-            gsap.to('#brandSubHeaderSG', {
-                scrollTrigger: {
-                    trigger: '#brandSubHeaderSG',   // element that triggers
-                    start: 'top center',       // when it enters viewport
-                    toggleActions: 'play none none none'
-                },
-                duration: 1,
-                delay: 1,
-                scrambleText: {
-                    text: "HAPPY PLACE - TOORAK",
-                    chars: "XO"
-                }
-                });
-
-            
-
-            gsap.to('#brandSubHeaderSG2', {
-                scrollTrigger: {
-                    trigger: '#brandSubHeaderSG2',   // element that triggers
-                    start: 'top center',       // when it enters viewport
-                    toggleActions: 'play none none none'
-                },
-                duration: 1,
-                delay: 0,
-                scrambleText: {
-                    text: "STILL LIFE",
-                    chars: "XO"
-                }
-                });
 
 
     });
@@ -117,16 +87,6 @@ export default function Sten(){
             priority
             />
         ))}
-        <video width="400px" height="500px" preload="none" className="galleryImage" muted autoPlay loop playsInline>
-                <source src="/gallery/sten/STEN SAMPLE VID.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-        </video>
-        </div>
-
-        <div className="brandSubHeader" id="brandSubHeaderSG2">
-            
-        </div>
-        <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
         {images2.map((image) => (
             <Image 
             key={image.id}
@@ -139,6 +99,11 @@ export default function Sten(){
             
             />
         ))}
+
+        <video width="400px" height="500px" preload="none" className="galleryImage" muted autoPlay loop playsInline>
+                <source src="/gallery/sten/STEN SAMPLE VID.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+        </video>
         </div>
     </>
     )
