@@ -68,10 +68,9 @@ export default function Sten(){
     return(
         <>
         <hr className="white-line"/>
-        <div className="headerBox" style={{height:150}}>
+        <div className="headerBox">
             <div className="brandHeader" id="brandHeaderSG"></div>
             <div className="brandServices" id="brandServicesSG"></div>
-            <div className="brandSubHeader" id="brandSubHeaderSG"> </div>
         </div>
         
         <div className="galleryImages" style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', justifyContent:"center"}}>
