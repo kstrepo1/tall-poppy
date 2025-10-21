@@ -48,8 +48,6 @@ export default function Sten(){
         {id:3, src: "/gallery/sten/STEN HAPPY HOUSE 3.jpg", alt: "Sten 3", imageHeader:"PICCOLA ARCO", imageText:"TABLES"},
         {id:4, src: "/gallery/sten/STEN HAPPY HOUSE 4.jpg", alt: "Sten 4", imageHeader:"PICCOLA", imageText:"PLINTH"},
         {id:5, src: "/gallery/sten/STEN HAPPY HOUSE 5.jpg", alt: "Sten 5", imageHeader:"PICCOLA", imageText:"PLINTH"},
-        {id:6, src: "/gallery/sten/STEN HAPPY HOUSE 6.jpg", alt: "Sten 6", imageHeader:"PICCOLA", imageText:"PLINTH"},
-        {id:7, src: "/gallery/sten/STEN HAPPY HOUSE 7.jpg", alt: "Sten 7", imageHeader:"", imageText:""},
         {id:8, src: "/gallery/sten/STEN HAPPY HOUSE 8.jpg", alt: "Sten 8", imageHeader:"", imageText:""},
         {id:9, src: "/gallery/sten/STEN HAPPY HOUSE 9.jpg", alt: "Sten 9", imageHeader:"", imageText:""},
         {id:10, src: "/gallery/sten/STEN HAPPY HOUSE 10.jpg", alt: "Sten 10", imageHeader:"", imageText:""}

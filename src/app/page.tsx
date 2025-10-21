@@ -59,9 +59,9 @@ export default function Landing() {
           <p>WEBSITE COMING SOON 🚀 ⚡️</p>
            <a href="mailto:hi@tallpoppystudios.au">hi@tallpoppystudios.au</a></center></div></div>
                         
-      {/* {loader>=1? 
+      {loader>=1? 
       <Link href='home'>
-        <Image src={"/enter.png"} height={200} width={200} alt="enter" priority/></Link> : <progress value={loader}/>} */}
+        <Image src={"/enter.png"} height={200} width={200} alt="enter" priority/></Link> : <progress value={loader}/>}
       
 
       
