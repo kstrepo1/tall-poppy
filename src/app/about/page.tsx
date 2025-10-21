@@ -45,7 +45,7 @@ export default function About() {
         
         Rooted in photography, design, and brand communication, we help brands craft thoughtful, visually driven narratives that feel authentic and intentional.
         Our work lives at the intersection of creativity and clarity, from concepting shoots and developing digital campaigns to refining the details that make a brand cohesive. 
-        We've collaborated with brands across design and lifestyle, fashion and beauty, and culture, bringing a hands-on, collaborative approach to every project.
+        We&apos;ve collaborated with brands across design and lifestyle, fashion and beauty, and culture, bringing a hands-on, collaborative approach to every project.
         
         At Tall Poppy Studios, we believe in creativity that feels authentic — less about perfection, and more about presence.
         
