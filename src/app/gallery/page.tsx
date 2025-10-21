@@ -7,6 +7,7 @@ import Moriomoto from "./morimoto";
 import Sten from "./sten";
 import Tia from "./tia";
 import FBMJ from "./FBMJ";
+import PRODUCTION from "./production";
 
 export default function Gallery() {
     return(
@@ -16,6 +17,7 @@ export default function Gallery() {
         <FBMJ/>
         <Sten/>
         <Tia/>
+        <PRODUCTION/>
         
         </>
     )
