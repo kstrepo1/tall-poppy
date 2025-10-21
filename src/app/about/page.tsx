@@ -3,9 +3,7 @@
 import Header from "../coreHeader";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import Link from "next/link";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+
 
 // Function Code:
 //     ---------------
@@ -36,23 +34,6 @@ import gsap from "gsap";
 
 
 export default function About() {
-
-    // useGSAP(() => { 
-    //         gsap.to('.aboutText', {
-    //             scrollTrigger: {
-    //                 trigger: '.aboutText',  
-    //                 start: "top 80%",
-    //                 end: "top 30%",
-    //                 scrub: false,
-    //             },
-    //             skewX: 0,
-    //             opacity: 0,
-    //             duration: 30,
-    //         });
-
-
-
-    // });
 
 
     return(
