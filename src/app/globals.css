@@ -69,7 +69,11 @@ header{
 }
 
 .aboutText{
-  margin:3rem;
+  margin:4rem;
+  padding: 1rem;
+  border: #000000;
+  border-style: solid;
+  border-width: 1px;
 }
 
 #headerLogo{
