@@ -103,9 +103,11 @@ export default function PRODUCTION(){
                 {images1.map((item) => {
                     const src = item.src;
                     const lower = src.toLowerCase();
+                    
 
                     if (lower.endsWith(".mp4")) {
                         return (
+                            <>
                             <video
                                 key={item.id}
                                 src={src}
@@ -117,11 +119,13 @@ export default function PRODUCTION(){
                                 muted
                                 playsInline
                             />
+                            {item.id}</>
                         );
                     }
 
                     // fallback for images (.jpg, .png, .jpeg, etc.)
                     return (
+                        <>
                         <Image
                             key={item.id}
                             src={src}
@@ -130,6 +134,7 @@ export default function PRODUCTION(){
                             alt={item.alt || ""}
                             className="galleryImage"
                         />
+                        {item.id}</>
                     );
                 })}
             </div>
