@@ -12,7 +12,19 @@ export default function Contact() {
     return(
         <>
         <Header/>
-        <h1>Contact</h1><hr className="white-line"/></>
+        <h1>Contact</h1><hr className="white-line"/>
+        
+        <center>
+            <p>JUST A GIRL WHO DOES IT ALL</p>
+            <p>PHOTOGRAPHY/DESIGN/CONTENT</p>
+            <p><a href="mailto:hi@tallpoppystudios.au">hi@tallpoppystudios.au</a></p>
+            <p><a href="https://www.instagram.com/t.allpoppy/">INSTAGRAM</a></p>
+           
+        </center> 
+              
+        
+        
+        </>
 
     )
 }
