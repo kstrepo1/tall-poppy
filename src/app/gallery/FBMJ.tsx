@@ -12,12 +12,13 @@ gsap.registerPlugin(ScrambleTextPlugin);
 export default function FBMJ(){
 
     useGSAP(() => { 
-        gsap.to('.brandHeader', {
-        scrollTrigger: '.brandHeader', // start animation when ".box" enters the viewport
-        x: 0
-        });
 
         gsap.to('#brandHeaderFBMJ', {
+        scrollTrigger: {
+                trigger: '#brandHeaderFBMJ',   // element that triggers
+                start: 'top center',       // when it enters viewport
+                toggleActions: 'play none none none'
+            },
         duration: 1, 
         scrambleText: {
             text: "BOWQUET by FBMJ",
@@ -25,7 +26,25 @@ export default function FBMJ(){
         }
         });
 
+        gsap.to('#brandHeaderSG', {
+                scrollTrigger: {
+                    trigger: '#brandHeaderSG',   // element that triggers
+                    start: 'top center',       // when it enters viewport
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                scrambleText: {
+                    text: "STEN",
+                    chars: "XO"
+                }
+            });
+
         gsap.to('#brandServicesFBMJ', {
+        scrollTrigger: {
+                trigger: '#brandServicesFBMJ',   // element that triggers
+                start: 'top center',       // when it enters viewport
+                toggleActions: 'play none none none'
+            },
         duration: 2,
         delay: 0.5,
         scrambleText:{
