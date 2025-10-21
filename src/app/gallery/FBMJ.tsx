@@ -40,15 +40,15 @@ export default function FBMJ(){
 
 
     const images1 = [
-        {id:0, src:"/gallery/fbmj/FBMJ1 004_ whisper honey.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
-        {id:1, src:"/gallery/fbmj/FBMJ1 005_ chemistry.jpg", alt: "FBMJ", imageHeader:"CHEMISTRY", imageText:""},
-        {id:2, src:"/gallery/fbmj/FBMJ1 009_ falling ( love again ).jpg", alt: "FBMJ", imageHeader:"FALLING", imageText:""},
-        {id:3, src:"/gallery/fbmj/FBMJ1 010_ out of control.jpg", alt: "FBMJ", imageHeader:"OUT OF CONTROL", imageText:""},
-        {id:4, src:"/gallery/fbmj/FBMJ1 COMPLIATION.jpg", alt: "FBMJ", imageHeader:"COMPILATION", imageText:""},
-        {id:5, src:"/gallery/fbmj/FBMJ1 WHISPER HONEY 1.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
-        {id:6, src:"/gallery/fbmj/FBMJ1 WHISPER HONEY 2.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
-        {id:7, src:"/gallery/fbmj/FMBJ1 005_ chemistry.jpg", alt: "FBMJ", imageHeader:"CHEMISTRY", imageText:""},
-    ]
+        {id:0, src:"/gallery/fbmj/FBMJ1 WHISPER HONEY 2.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
+        {id:1, src:"/gallery/fbmj/FBMJ1 009_ falling ( love again ).jpg", alt: "FBMJ", imageHeader:"FALLING", imageText:""},
+        {id:2, src:"/gallery/fbmj/FBMJ1 010_ out of control.jpg", alt: "FBMJ", imageHeader:"OUT OF CONTROL", imageText:""},
+        {id:3, src:"/gallery/fbmj/FBMJ1 WHISPER HONEY 1.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
+        {id:4, src:"/gallery/fbmj/FBMJ1 005_ chemistry.jpg", alt: "FBMJ", imageHeader:"CHEMISTRY", imageText:""},
+        {id:5, src:"/gallery/fbmj/FBMJ1 004_ whisper honey.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
+        {id:6, src:"/gallery/fbmj/FMBJ1 005_ chemistry.jpg", alt: "FBMJ", imageHeader:"CHEMISTRY", imageText:""},
+        {id:7, src:"/gallery/fbmj/FBMJ1 COMPLIATION.jpg", alt: "FBMJ", imageHeader:"COMPILATION", imageText:""},
+        ]
 
     const images2 = [
         {id:0, src:"/gallery/fbmj/FBMJ2 002_ bow wow wowFILM.jpg", alt: "FBMJ", imageHeader:"BOW WOW WOW", imageText:""},

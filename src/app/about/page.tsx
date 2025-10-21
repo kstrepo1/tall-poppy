@@ -5,32 +5,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 
-// Function Code:
-//     ---------------
-//     gsap.from(animatedText, {
-//         scrollTrigger: {
-//           trigger: animatedText,
-//           start: "top 85%",
-//           end: "top 35%",
-//           scrub: true,
-//         },
-        // skewX: 45,
-        // opacity: 0,
-        // duration: 2,
-//       });
-
-//     HTML Code:
-//     ---------------
-//     <section class="container-fluid vh-100 d-flex align-items-center justify-content-center position-relative effect-section" data-effect="skew-in">
-//           <button class="btn btn-dark position-absolute top-0 end-0 m-3 copy-btn">Copy Code</button>
-//           <div class="row w-100">
-//             <div class="col-12 text-center">
-//               <h1 class="animated-text" style="translate: none; rotate: none; scale: none; opacity: 0.5759; transform: translate3d(0px, 0px, 0px) skew(19.0843deg, 0deg);">Skew-In Effect</h1>
-//             </div>
-//           </div>
-//         </section>
-
-
 
 
 export default function About() {
