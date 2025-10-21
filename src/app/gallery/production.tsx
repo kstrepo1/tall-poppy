@@ -26,32 +26,20 @@ export default function PRODUCTION(){
                 }
             });
 
-            gsap.to('#brandServicesProduction', {
-                scrollTrigger: {
-                    trigger: '#brandServicesProduction',   // element that triggers
-                    start: 'top center',       // when it enters viewport
-                    toggleActions: 'play none none none'
-                },
-                duration: 1,
-                delay: 0.5,
-                scrambleText: {
-                    text: "PHOTOGRAPHY, CREATIVE DIRECTION",
-                    chars: "XO"
-                }
-                });
 
             });
 
-    const images1 = [
+    const media1 = [
         {id:1, src: "/gallery/production/Bobbi Brown 1.MP4", alt: "BOBBI BROWN", imageHeader:"", imageText:""},
-        {id:3, src: "/gallery/production/CLEOPATRA 2.jpg", alt: "", imageHeader:"", imageText:""},
-        {id:4, src: "/gallery/production/CLEOPATRA 3.jpg", alt: "", imageHeader:"", imageText:""},
-        {id:5, src: "/gallery/production/CLEOPATRA 4.jpg", alt: "", imageHeader:"", imageText:""},
-        {id:6, src: "/gallery/production/CLEOPATRA 5.jpg", alt: "", imageHeader:"", imageText:""},
-        {id:7, src: "/gallery/production/CLEOPATRA 6.jpg", alt: "", imageHeader:"", imageText:""},
-        {id:8, src: "/gallery/production/CLEOPATRA 7.jpg", alt: "", imageHeader:"", imageText:""},
-        {id:9, src: "/gallery/production/CLEOPATRA 8.jpg", alt: "", imageHeader:"", imageText:""},
-        {id:12, src: "/gallery/production/CLEOPATRA 11.jpg", alt: "", imageHeader:"", imageText:""},
+        {id:2, src: "/gallery/production/BOBBIBROWN2.MP4", alt: "BOBBI BROWN", imageHeader:"", imageText:""},
+        {id:3, src: "/gallery/production/CLEOPATRA 3.jpg", alt: "", imageHeader:"", imageText:""},
+        {id:4, src: "/gallery/production/CLEOPATRA 4.jpg", alt: "", imageHeader:"", imageText:""},
+        {id:5, src: "/gallery/production/CLEOPATRA 5.jpg", alt: "", imageHeader:"", imageText:""},
+        {id:6, src: "/gallery/production/CLEOPATRA 8.jpg", alt: "", imageHeader:"", imageText:""},
+        {id:7, src: "/gallery/production/CLEOPATRA 2.jpg", alt: "", imageHeader:"", imageText:""},
+        {id:8, src: "/gallery/production/CLEOPATRA 6.jpg", alt: "", imageHeader:"", imageText:""},
+        {id:9, src: "/gallery/production/CLEOPATRA 11.jpg", alt: "", imageHeader:"", imageText:""},
+        {id:10, src: "/gallery/production/CLEOPATRA 7.jpg", alt: "", imageHeader:"", imageText:""},
         {id:13, src: "/gallery/production/CLEOPATRA 12.mp4", alt: "", imageHeader:"", imageText:""},
         {id:14, src: "/gallery/production/KMART 1.jpg", alt: "", imageHeader:"", imageText:""},
         {id:15, src: "/gallery/production/KMART 1.mp4", alt: "", imageHeader:"", imageText:""},
@@ -87,21 +75,20 @@ export default function PRODUCTION(){
             <hr className="white-line" />
             <div className="headerBox">
                 <div className="brandHeader" id="brandHeaderProduction" />
-                <div className="brandServices" id="brandServicesProduction" />
             </div>
 
             <div
                 className="galleryImages"
                 style={{ display: "flex", flexDirection: "row", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}
             >
-                {images1.map((item) => {
+                {media1.map((item) => {
                     const src = item.src;
                     const lower = src.toLowerCase();
                     
 
                     if (lower.endsWith(".mp4")) {
                         return (
-                            <>
+                        
                             <video
                                 key={item.id}
                                 src={src}
@@ -113,13 +100,13 @@ export default function PRODUCTION(){
                                 muted
                                 playsInline
                             />
-                            {item.id}</>
+                            
                         );
                     }
 
                     // fallback for images (.jpg, .png, .jpeg, etc.)
                     return (
-                        <>
+                      
                         <Image
                             key={item.id}
                             src={src}
@@ -128,7 +115,7 @@ export default function PRODUCTION(){
                             alt={item.alt || ""}
                             className="galleryImage"
                         />
-                        {item.id}</>
+                     
                     );
                 })}
             </div>

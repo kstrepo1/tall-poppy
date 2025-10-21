@@ -52,12 +52,6 @@ export default function Landing() {
         priority
       />
 
-      <div className="coming-soon"><div>
-        <center>
-          <p>JUST A GIRL WHO DOES IT ALL</p>
-          <p>PHOTOGRAPHY/DESIGN/CONTENT</p>
-          <p>WEBSITE COMING SOON 🚀 ⚡️</p>
-           <a href="mailto:hi@tallpoppystudios.au">hi@tallpoppystudios.au</a></center></div></div>
                         
       {loader>=1? 
       <Link href='home'>
