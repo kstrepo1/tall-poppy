@@ -39,7 +39,7 @@ export default function FBMJ(){
 
 
 
-    const images1 = [
+    const images2 = [
         {id:0, src:"/gallery/fbmj/FBMJ1 WHISPER HONEY 2.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
         {id:1, src:"/gallery/fbmj/FBMJ1 009_ falling ( love again ).jpg", alt: "FBMJ", imageHeader:"FALLING", imageText:""},
         {id:2, src:"/gallery/fbmj/FBMJ1 010_ out of control.jpg", alt: "FBMJ", imageHeader:"OUT OF CONTROL", imageText:""},
@@ -50,7 +50,7 @@ export default function FBMJ(){
         {id:7, src:"/gallery/fbmj/FBMJ1 COMPLIATION.jpg", alt: "FBMJ", imageHeader:"COMPILATION", imageText:""},
         ]
 
-    const images2 = [
+    const images1 = [
         {id:0, src:"/gallery/fbmj/FBMJ2 002_ bow wow wowFILM.jpg", alt: "FBMJ", imageHeader:"BOW WOW WOW", imageText:""},
         {id:1, src:"/gallery/fbmj/FBMJ2 out of control 1.jpg", alt: "FBMJ", imageHeader:"OUT OF CONTROL 1", imageText:""},
         {id:2, src:"/gallery/fbmj/FBMJ2 out of control_.jpg", alt: "FBMJ", imageHeader:"OUT OF CONTROL 2", imageText:""},
