@@ -45,9 +45,9 @@ export default function About() {
                     end: "top 30%",
                     scrub: false,
                 },
-                skewX: 45,
+                skewX: 0,
                 opacity: 0,
-                duration: 2,
+                duration: 30,
             });
 
 
@@ -63,8 +63,10 @@ export default function About() {
         Tall Poppy Studios is a Melbourne-based creative studio led by Mads Russell. 
         
         Rooted in photography, design, and brand communication, we help brands craft thoughtful, visually driven narratives that feel authentic and intentional.
-        Our work lives at the intersection of creativity and clarity, from concepting shoots and developing digital campaigns to refining the details that make a brand cohesive. We've collaborated with brands across design, lifestyle, and culture, bringing a hands-on, collaborative approach to every project.
-        At Tall Poppy Studios, we believe in creativity that feels authentic — less about perfection, more about presence.
+        Our work lives at the intersection of creativity and clarity, from concepting shoots and developing digital campaigns to refining the details that make a brand cohesive. 
+        We've collaborated with brands across design and lifestyle, fashion and beauty, and culture, bringing a hands-on, collaborative approach to every project.
+        
+        At Tall Poppy Studios, we believe in creativity that feels authentic — less about perfection, and more about presence.
         
         </div>
 

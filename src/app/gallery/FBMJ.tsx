@@ -44,7 +44,7 @@ export default function FBMJ(){
         {id:1, src:"/gallery/fbmj/FBMJ1 005_ chemistry.jpg", alt: "FBMJ", imageHeader:"CHEMISTRY", imageText:""},
         {id:2, src:"/gallery/fbmj/FBMJ1 009_ falling ( love again ).jpg", alt: "FBMJ", imageHeader:"FALLING", imageText:""},
         {id:3, src:"/gallery/fbmj/FBMJ1 010_ out of control.jpg", alt: "FBMJ", imageHeader:"OUT OF CONTROL", imageText:""},
-        {id:4, src:"/gallery/fbmj/FBMJ1 COMPLIATION.jpg", alt: "FBMJ", imageHeader:"COMPLIATIONY", imageText:""},
+        {id:4, src:"/gallery/fbmj/FBMJ1 COMPLIATION.jpg", alt: "FBMJ", imageHeader:"COMPILATION", imageText:""},
         {id:5, src:"/gallery/fbmj/FBMJ1 WHISPER HONEY 1.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
         {id:6, src:"/gallery/fbmj/FBMJ1 WHISPER HONEY 2.jpg", alt: "FBMJ", imageHeader:"WHISPER HONEY", imageText:""},
         {id:7, src:"/gallery/fbmj/FMBJ1 005_ chemistry.jpg", alt: "FBMJ", imageHeader:"CHEMISTRY", imageText:""},
