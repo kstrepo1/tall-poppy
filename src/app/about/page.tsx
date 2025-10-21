@@ -37,29 +37,29 @@ import gsap from "gsap";
 
 export default function About() {
 
-    useGSAP(() => { 
-            gsap.to('.aboutText', {
-                scrollTrigger: {
-                    trigger: '.aboutText',  
-                    start: "top 80%",
-                    end: "top 30%",
-                    scrub: false,
-                },
-                skewX: 0,
-                opacity: 0,
-                duration: 30,
-            });
+    // useGSAP(() => { 
+    //         gsap.to('.aboutText', {
+    //             scrollTrigger: {
+    //                 trigger: '.aboutText',  
+    //                 start: "top 80%",
+    //                 end: "top 30%",
+    //                 scrub: false,
+    //             },
+    //             skewX: 0,
+    //             opacity: 0,
+    //             duration: 30,
+    //         });
 
 
 
-    });
+    // });
 
 
     return(
         <>
         <Header/>
         <h1>About</h1><hr className="white-line"/>
-        <div className="aboutText" style={{translate: "none", rotate: "none", scale: "none", opacity: 0.5759, transform: "translate3d(0px, 0px, 0px) skew(19.0843deg, 0deg)"}}>
+        <div className="aboutText">
         Tall Poppy Studios is a Melbourne-based creative studio led by Mads Russell. 
         
         Rooted in photography, design, and brand communication, we help brands craft thoughtful, visually driven narratives that feel authentic and intentional.
