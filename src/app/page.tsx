@@ -20,7 +20,8 @@ export default function Landing() {
   return (
 <>
   <meta name="description" content="Tall Poppy Studios is a Melbourne-based creative studio led by Mads Russell. Rooted in photography, design, and brand communication, we help brands craft thoughtful, visually driven narratives that feel authentic and intentional." />
-
+  <link rel="icon" href="favicon.ico" />
+  
   {!bgLoaded ? (
     <div
       style={{
