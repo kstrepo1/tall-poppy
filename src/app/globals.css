@@ -36,6 +36,21 @@ header{
   
 }
 
+@media only screen and (max-width: 987px) {
+  .aboutImage{
+    position:fixed;
+    width: calc(100vh / sqrt(2));
+    height: calc(100vw / sqrt(2));
+    transform: rotate(90deg)
+  }
+
+  .aboutText{
+    transform: rotate(-90deg);
+    top:10%;
+  }
+
+}
+
 @media only screen and (max-width: 767px) {
   #headerElements{
     flex-direction: column;
@@ -69,11 +84,28 @@ header{
 }
 
 .aboutText{
-  margin:4rem;
-  padding: 1rem;
-  border: #000000;
-  border-style: solid;
-  border-width: 1px;
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top:0;
+  left: 15%;
+  right: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-frame{
+  position: relative;
+}
+
+.aboutImage{
+  position: relative;
+  width: 80vw;
+  height: 70vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 #headerLogo{
