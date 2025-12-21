@@ -36,76 +36,47 @@ header{
   
 }
 
-@media only screen and (max-width: 987px) {
-  .aboutImage{
-    position:fixed;
-    width: calc(100vh / sqrt(2));
-    height: calc(100vw / sqrt(2));
-    transform: rotate(90deg)
-  }
-
-  .aboutText{
-    transform: rotate(-90deg);
-    top:10%;
-  }
-
+.dashboard-content{
+  margin:20px 20px 10px 40px;
 }
 
-@media only screen and (max-width: 767px) {
-  #headerElements{
-    flex-direction: column;
-    height:auto;
-    width: 100vw;
-  }
 
-  #headerLogo{
-    display: flex;
-    justify-content: center;
-    width:100vw;
-  }
-  
-  #tall-poppy-logo{
-    height: auto;
-    width: 60vw;
-  }
-
-
-  .title-option{
-    height:100px;
-    width: 100px;
-    top: 50vh;
-  }
-
-  #about{
-    y:-100
-  }
-
-
-}
-
-.aboutText{
+.aboutText {
   position: absolute;
-  width: 70%;
-  height: 100%;
-  top:0;
-  left: 15%;
-  right: 15%;
+  inset: 0;             /* Fills the .about-frame exactly */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;  /* Vertical center */
+  justify-content: center; /* Horizontal center */
+  padding: 10%;         /* Keeps text away from the image edges */
+  pointer-events: none;
+}
+
+.about-frame {
+  position: relative;
+  width: 90vw;        /* Set the width of the frame on the screen */
+  max-width: 900px;   /* Match your image's native width */
+  margin: 2rem auto;  /* Centers the frame on the page */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.aboutImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-content {
+  max-width: 600px;     /* Prevents text lines from being too long to read */
   text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.about-frame{
-  position: relative;
-}
-
-.aboutImage{
-  position: relative;
-  width: 80vw;
-  height: 70vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+.aboutImage img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
 }
 
 #headerLogo{
@@ -119,6 +90,10 @@ header{
   flex-grow: 2;
   margin:auto;
   justify-content: flex-end;
+  color:#ffffff
+}
+
+a{
   color:#ffffff
 }
 
@@ -228,4 +203,62 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background-color: #ffffff;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 987px) {
+  .about-frame {
+    width: 95vw;
+    display: block; /* Ensure it's not trying to flex-center anymore */
+  }
+  
+  .aboutImage {
+    display: none !important; /* Force it to hide */
+  }
+
+  .aboutText {
+    position: relative; 
+    inset: auto;       /* Reset the absolute positioning */
+    color: #000000;    /* Text color for white background */
+    background: none;
+    padding: 2rem 0;   /* Vertical spacing */
+    pointer-events: auto; /* Re-enable clicks/selection */
+  }
+
+  .text-content {
+    font-size: 0.95rem;
+    max-width: 100%;   /* Use full width on mobile */
+    text-align: left;  /* Often easier to read on small screens */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #headerElements{
+    flex-direction: column;
+    height:auto;
+    width: 100vw;
+  }
+
+  #headerLogo{
+    display: flex;
+    justify-content: center;
+    width:100vw;
+  }
+  
+  #tall-poppy-logo{
+    height: auto;
+    width: 60vw;
+  }
+
+
+  .title-option{
+    height:100px;
+    width: 100px;
+    top: 50vh;
+  }
+
+  #about{
+    y:-100
+  }
+
+
 }

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Merriweather, Merriweather_Sans } from "next/font/google";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
 import { GoogleAnalytics } from '@next/third-parties/google';
+
 
 
 const merriweather = Merriweather({
